@@ -158,6 +158,7 @@ BOARD_ROOT_EXTRA_FOLDERS := firmware persist fsg
 # SELinux
 #include device/qcom/sepolicy-legacy/sepolicy.mk
 #BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy_tmp
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
