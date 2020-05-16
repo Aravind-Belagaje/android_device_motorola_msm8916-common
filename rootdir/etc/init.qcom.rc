@@ -249,8 +249,8 @@ on post-fs-data
     chmod 0660 /data/vendor/location/xtra/socket_hal_xtra
     chown gps gps /data/vendor/location/xtra/xtra.sqlite
 
-    # Create /data/time folder for time-services
-    mkdir /data/time/ 0700 system system
+    # Create /data/vendor/time folder for time-services
+    mkdir /data/vendor/time/ 0700 system system
 
     mkdir /data/audio/ 0770 media audio
 
