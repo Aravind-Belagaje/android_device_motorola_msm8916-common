@@ -379,10 +379,11 @@ service thermal-com /vendor/bin/thermal-engine --minimode
     writepid /dev/cpuset/system-background/tasks
 
 service time_daemon /vendor/bin/time_daemon
-   class late_start
-   user root
-   group root
-   writepid /dev/cpuset/system-background/tasks
+    class main
+    user system
+    group system
+    capabilities SYS_TIME
+    writepid /dev/cpuset/system-background/tasks
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
