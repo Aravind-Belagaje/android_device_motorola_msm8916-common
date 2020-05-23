@@ -82,6 +82,7 @@ on boot
     chmod 0644 /proc/cmdline
 
     mkdir /persist/bluetooth 0770 bluetooth bluetooth
+    mkdir /persist/time 0770 system system
 
     # Assign TCP buffer thresholds to be ceiling value of technology maximums
     # Increased technology maximums should be reflected here.
