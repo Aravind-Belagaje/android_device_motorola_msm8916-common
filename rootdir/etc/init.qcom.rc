@@ -500,7 +500,6 @@ service vendor.per_mgr /vendor/bin/pm-service
     class core
     user system
     group system
-    disabled
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.per_proxy /vendor/bin/pm-proxy
@@ -510,11 +509,11 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-on property:init.svc.per_mgr=running
-    start per_proxy
+on property:init.svc.vendor.per_mgr=running
+    start vendor.per_proxy
 
 on property:sys.shutdown.requested=*
-    stop per_proxy
+    stop vendor.per_proxy
 
 on moto-charger
     setprop ro.board.platform msm8916
