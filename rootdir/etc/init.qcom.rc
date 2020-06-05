@@ -341,6 +341,9 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     group camera system inet input graphics
     writepid /dev/cpuset/camera-daemon/tasks
 
+on property:init.svc.qcamerasvr=running
+    restart media
+
 service charger /system/bin/charger
     class charger
     user system
@@ -553,4 +556,3 @@ on moto-charger
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
-
