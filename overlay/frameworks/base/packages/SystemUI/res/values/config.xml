@@ -29,5 +29,13 @@
         increase the rate of unintentional unlocks. -->
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
 
+    <!-- LockScreenCharger current inversion -->
+    <bool name="showInvertedCurrent">false</bool>
+
+    <!-- LockScreenCharger current sysfs path -->
+    <string name="config_currentPath">/sys/class/power_supply/battery/current_now</string>
+
+    <!-- LockScreenCharger voltage sysfs path -->
+    <string name="config_voltagePath">/sys/class/power_supply/battery/voltage_now</string>
 </resources>
 
