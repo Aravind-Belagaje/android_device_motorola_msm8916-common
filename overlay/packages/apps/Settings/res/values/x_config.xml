@@ -14,7 +14,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Battery Health -->
-    <string name="config_batCurCap">/sys/class/power_supply/max170xx_battery/charge_full_design</string>
-    <string name="config_batDesCap">/sys/class/power_supply/max170xx_battery/charge_full</string>
+    <string name="config_batCurCap">/sys/class/power_supply/max170xx_battery/charge_full</string>
+    <string name="config_batDesCap">/sys/class/power_supply/max170xx_battery/charge_full_design</string>
 
 </resources>
